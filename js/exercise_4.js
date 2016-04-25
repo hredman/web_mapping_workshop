@@ -21,7 +21,7 @@ var dataFileToAdd = 'data/parks.geojson';
 
 var featureLayer = L.mapbox.featureLayer();
 	featureLayer.loadURL(dataFileToAdd);
-	featureLayer.addTo(map)
+	featureLayer.addTo(map);
 
 featureLayer.on('ready', funtion(){ 
    this.setStyle({
