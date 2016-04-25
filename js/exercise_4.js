@@ -80,9 +80,9 @@ map.on('locationfound', function(e) {
             coordinates: [e.latlng.lng, e.latlng.lat]
         },
         properties: {
-            'title': 'YOU ARE HERE!',
-            'marker-color': '#ff888',
-            'marker-symbol': 'star'
+            "title": 'YOU ARE HERE!',
+            "marker-color": '#ff888',
+            "marker-symbol": 'star'
         }
     })
 
