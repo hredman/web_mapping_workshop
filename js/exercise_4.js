@@ -13,6 +13,23 @@ L.mapbox.accessToken = accessToken;
 var map = L.mapbox.map('map', mapId);
 
 // Set the initial view of the map to the whole US
-map.setView([39.758, -101.206], 15);
+map.setView([39, -96], 4);
 
 // Great, now we have a basic web map!
+
+var dataFileToAdd = 'data/parks.geojson';
+
+var featureLayer = L.mapbox.featureLayer()
+	featureLayer.loadURL(dataFileToAdd);
+	featureLayer.addTo(map)
+
+featureLayer.on('ready', funtion(){ 
+   this.setStyle({
+                "color":"red",
+                "fillcolor":"red",
+                "weight":".5",
+                "opacity":0.65
+                })
+				map.fitBounds(featureLayer.getBounds());
+                })
+    
