@@ -81,7 +81,7 @@ map.on('locationfound', function(e) {
         },
         properties: {
             "title": 'YOU ARE HERE!',
-            "marker-color": 'red',
+            "marker-color": '#ff8888',
             "marker-symbol": 'star'
         }
     })
