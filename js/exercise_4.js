@@ -23,7 +23,7 @@ var featureLayer = L.mapbox.featureLayer();
 	featureLayer.loadURL(dataFileToAdd);
 	featureLayer.addTo(map);
 
-featureLayer.on('ready', funtion(){ 
+featureLayer.on('ready', function(){ 
    this.setStyle({
                 "color":"red",
                 "fillColor":"red",
